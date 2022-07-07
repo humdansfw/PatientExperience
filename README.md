@@ -40,4 +40,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-[Dan](https://choosealicense.com/licenses/mit/)
+[Dan](https://github.com/humdansfw/Repo1/blob/main/license)
