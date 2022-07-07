@@ -12,7 +12,7 @@ pip install patientexperiencepiepline
 
 ## Usage
 
-Not all functions are shown as many are wrapped in larger functions in order ot automate processes. 
+Not all functions are shown as many are wrapped in larger functions in order ot automate processes. The patientexperienceanalysis3.ipynb file demonstrates usage.
 
 ```python
 import patientexperiencepipeline as pep
