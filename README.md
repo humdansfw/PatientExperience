@@ -15,23 +15,24 @@ pip install patientexperiencepiepline
 ```python
 import patientexperiencepipeline as pep
 
-load_data(filename):
-    ''' '''
-    Create function to: 
-        read data into a pandas dataframe
-        dataframe is named df
-    Parameters:
-        filename: string
-    Returns:
-        df: dataframe
-    '''
-pep.load_data(‘patient experience.xlsx’)
+# load the data
+df = pep.load_data(‘patient_experience.xlsx’)
 
-# returns data
-pep.clean_data(list_of_texts)
+# lemmatize a column
+bestlemma = pep.sbl(df, df['Best Part'])
 
-# returns 
-foobar.singularize('phenomena')
+# create word frequency for column
+bestcounts = pep.word_list(bestlemma)
+
+#
+
+
+
+
+
+
+
+
 ```
 
 ## Contributing
