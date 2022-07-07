@@ -12,26 +12,30 @@ pip install patientexperiencepiepline
 
 ## Usage
 
+Not all functions are shown as many are wrapped in larger functions in order ot automate processes. 
+
 ```python
 import patientexperiencepipeline as pep
 
 # load the data
 df = pep.load_data(‘patient_experience.xlsx’)
 
-# lemmatize a column
+# clean and lemmatize a column
 bestlemma = pep.sbl(df, df['Best Part'])
-
 # create word frequency for column
 bestcounts = pep.word_list(bestlemma)
+bestcounts.head()
 
-#
+# create a frequency distribution and word cloud for each quarter of the year.
+pep.quarterclouds(df)
 
+# create intertopic distance map
+pep.LDApipe(df)
 
-
-
-
-
-
+# clean dataframe and add vader scores
+cdf = pep.clean_df(df)
+pep.vader_df(cdf)
+cdf.head()
 
 ```
 
