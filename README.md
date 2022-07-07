@@ -12,6 +12,8 @@ pip install patientexperiencepiepline
 
 ## Usage
 
+The patient experience data being consumed should have four columns. They are "Date" (datetimes), "Best Part" (text), "Worst Part" (text), and "Suggestions" (text). 
+
 Not all functions are shown as many are wrapped in larger functions in order ot automate processes. The patientexperienceanalysis3.ipynb file demonstrates usage.
 
 ```python
