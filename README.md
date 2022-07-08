@@ -14,9 +14,9 @@ save patientexperiencepipeline.py to your current working directory
 
 The patient experience data being injested should have four columns. They are:
 - "Date" (datetimes) - YYYY-MM-DD HH:MM:SS.MS
-- "Best Part" (object) 
-- "Worst Part" (object)
-- "Suggestions" (object)
+- "Best Part" (object) - string/text
+- "Worst Part" (object) - string/text
+- "Suggestions" (object) - string/text
 
 Not all functions are shown as many are wrapped in larger functions in order ot automate processes. The patientexperienceanalysis3.ipynb file demonstrates usage.
 
