@@ -1,25 +1,29 @@
 # Patient Experience Pipeline
 
-PatientExperiencePipeline is a Python library for dealing with patient experience survey texts.
+The PatientExperiencePipeline is a Python library for dealing with patient experience survey texts.
 
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install..
 
 ```bash
-pip install patientexperiencepiepline
+save patientexperiencepipeline.py to your current working directory
 ```
 
 ## Usage
 
-The patient experience data being consumed should have four columns. They are "Date" (datetimes), "Best Part" (text), "Worst Part" (text), and "Suggestions" (text). 
+The patient experience data being injested should have four columns. They are:
+- "Date" (datetimes) - YYYY-MM-DD HH:MM:SS.MS
+- "Best Part" (object) 
+- "Worst Part" (object)
+- "Suggestions" (object)
 
 Not all functions are shown as many are wrapped in larger functions in order ot automate processes. The patientexperienceanalysis3.ipynb file demonstrates usage.
 
 ```python
 import patientexperiencepipeline as pep
 
-# load the data
+# load the data into a pandas dataframe
 df = pep.load_data(‘patient_experience.xlsx’)
 
 # clean and lemmatize a column
